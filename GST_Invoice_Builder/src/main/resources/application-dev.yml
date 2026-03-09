@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres-db:5432/gst_invoice
+    username: postgres
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+
+
+#EMAIL CONFIG
+EMAIL_HOST: smtp.gmail.com
+EMAIL_PORT: 587
+EMAIL_ID: javateam.vaistratech@gmail.com
+EMAIL_PASSWORD: qxqdtmjnlpqbdufk
+VERIFY_EMAIL_HOST: http://localhost:${SERVER_PORT}
+
+host: localhost
+port: 5432
+database: gst_invoice
+pgDumpPath: C:\\Program Files\\PostgreSQL\\16\\bin\\pg_dump
+backupFilePath: C:\\Users\\admin\\Desktop\\auth-service.sql

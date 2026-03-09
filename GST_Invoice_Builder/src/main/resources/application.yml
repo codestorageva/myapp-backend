@@ -1,0 +1,68 @@
+server:
+  port: ${SERVER_PORT:8084}
+
+spring:
+  application:
+    name: GST_INVOICE
+  profiles:
+    active: ${PROFILE:dev}
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: ${GOOGLE_CLIENT_ID}
+            client-secret: ${GOOGLE_CLIENT_SECRET}
+          github:
+            client-id: ${GITHUB_CLIENT_ID}
+            client-secret: ${GITHUB_CLIENT_SECRET}
+          facebook:
+            client-id: ${FACEBOOK_CLIENT_ID}
+            client-secret: ${FACEBOOK_CLIENT_SECRET}
+
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+  jpa:
+    show-sql: true
+
+  batch:
+    jdbc:
+      initialize-schema: always
+    job:
+      enabled: false
+
+  mail:
+    host: ${EMAIL_HOST}
+    port: ${EMAIL_PORT}
+    username: ${EMAIL_ID}
+    password: ${EMAIL_PASSWORD}
+    properties:
+      mail:
+        debug: true
+        transport:
+          protocol: smtp
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+host_url: ${VERIFY_EMAIL_HOST}
+
+# AWS Configuration (use environment variables)
+#aws:
+#  endpointUrl: https://s3.ap-south-1.amazonaws.com
+#  accessKey: ${AWS_ACCESS_KEY}
+#  secretKey: ${AWS_SECRET_KEY}
+#  bucketName: ${AWS_BUCKET_NAME}
+
+host: ${host}
+port: ${port}
+database: ${database:invoice}
+username: ${spring.datasource.username:postgres}
+dbPassword: ${spring.datasource.password:janki362005}
+pgDumpPath: ${pgDumpPath}
+backupFilePath: ${backupFilePath}

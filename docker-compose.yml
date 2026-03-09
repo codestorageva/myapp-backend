@@ -1,0 +1,184 @@
+#services:
+#  postgres-db:
+#    image: postgres:16
+#    container_name: postgres-db
+#    environment:
+#      POSTGRES_DB: gst_invoice
+#      POSTGRES_USER: postgres
+#      POSTGRES_PASSWORD: root
+#    ports:
+#      - "5432:5432"
+#    volumes:
+#      - pgdata:/var/lib/postgresql/data
+#
+#  springboot-app: # Changed service key to match your Nginx config
+#    build: ./GST_Invoice_Builder
+#    container_name: springboot-app
+#    restart: always
+#    ports:
+#      - "8084:8084"
+#    environment:
+#      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-db:5432/gst_invoice
+#      SPRING_DATASOURCE_USERNAME: postgres
+#      SPRING_DATASOURCE_PASSWORD: root
+#    depends_on:
+#      - postgres-db
+#
+#  nginx:
+#    image: nginx:alpine
+#    container_name: nginx-server
+#    ports:
+#      - "80:80"
+#    volumes:
+#      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+#    depends_on:
+#      - springboot-app
+#
+#  frontend:
+#    build: ./invoice/invoice-fronted
+#    container_name: invoice-frontend
+#    environment:
+#      NODE_ENV: production
+#
+#      NEXTAUTH_URL: http://invoice.local
+#      NEXTAUTH_SECRET: vaistra-hrm-nextauth-secret-2026-prod
+#
+#      #      KEYCLOAK_ISSUER: http://keycloak:8080/realms/vaistra
+#      #      NEXT_PUBLIC_KEYCLOAK_ISSUER: http://keycloak:8080/realms/vaistra
+#
+#
+#      NEXT_PUBLIC_NEXT_BACKEND_URL: http://invoice.local
+#    ports:
+#      - "3000:3000"
+#    networks:
+#      - vaistra-net
+#
+#volumes:
+#  pgdata:
+#
+services:
+  postgres-db:
+    image: postgres:16
+    container_name: postgres-db
+    environment:
+      POSTGRES_DB: gst_invoice
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - invoice-net
+
+  springboot-app:
+    build: ./GST_Invoice_Builder
+    container_name: springboot-app
+    restart: always
+    ports:
+      - "8084:8084"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-db:5432/gst_invoice
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: root
+    depends_on:
+      - postgres-db
+    networks:
+      - invoice-net
+
+  nextjs-app:
+    build: ./invoice/invoice-fronted
+    container_name: invoice-frontend
+    restart: always
+    environment:
+      NODE_ENV: production
+      NEXTAUTH_URL: http://local-invoice.com
+      NEXTAUTH_SECRET: vaistra-hrm-nextauth-secret-2026-prod
+      NEXT_PUBLIC_NEXT_BACKEND_URL:  http://local-invoice.com
+    ports:
+      - "3000:3000"
+    networks:
+      - invoice-net
+
+  nginx:
+    image: nginx:alpine
+    container_name: nginx-server
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - springboot-app
+      - nextjs-app
+    networks:
+      - invoice-net
+
+networks:
+  invoice-net: # Common network for all services
+    driver: bridge
+
+volumes:
+  pgdata:
+
+
+#services:
+#  postgres-db:
+#    image: postgres:16
+#    container_name: postgres-db
+#    environment:
+#      POSTGRES_DB: gst_invoice
+#      POSTGRES_USER: postgres
+#      POSTGRES_PASSWORD: root
+#    volumes:
+#      - pgdata:/var/lib/postgresql/data
+#    networks:
+#      - invoice-net
+#
+#  springboot-app:
+#    build: ./GST_Invoice_Builder
+#    container_name: springboot-app
+#    restart: always
+#    ports:
+#      - "8084:8084"
+#    environment:
+#      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-db:5432/gst_invoice
+#      SPRING_DATASOURCE_USERNAME: postgres
+#      SPRING_DATASOURCE_PASSWORD: root
+#    depends_on:
+#      - postgres-db
+#    networks:
+#      - invoice-net
+#
+#  nextjs-app:
+#    build: ./invoice/invoice-fronted
+#    container_name: invoice-frontend
+#    restart: always
+#    expose:
+#      - "3000"
+#    environment:
+#      NODE_ENV: production
+#      NEXTAUTH_URL: http://local-invoice.com
+#      NEXTAUTH_SECRET: vaistra-hrm-nextauth-secret-2026-prod
+#      NEXT_PUBLIC_NEXT_BACKEND_URL: http://local-invoice.com
+#    networks:
+#      - invoice-net
+#
+#  nginx:
+#    image: nginx:alpine
+#    container_name: nginx-server
+#    ports:
+#      - "80:80"
+#    volumes:
+#      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+#    depends_on:
+#      - springboot-app
+#      - nextjs-app
+#    networks:
+#      - invoice-net
+#
+#networks:
+#  invoice-net:
+#    driver: bridge
+#
+#volumes:
+#  pgdata:

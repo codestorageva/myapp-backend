@@ -1,0 +1,735 @@
+stateName,cityName,status
+Andaman And Nicobar Islands,Nicobars,TRUE
+Andaman And Nicobar Islands,North And Middle Andaman,TRUE
+Andaman And Nicobar Islands,South Andamans,TRUE
+Andhra Pradesh,Anantapur,TRUE
+Andhra Pradesh,Chittoor,TRUE
+Andhra Pradesh,East Godavari,TRUE
+Andhra Pradesh,Guntur,TRUE
+Andhra Pradesh,Krishna,TRUE
+Andhra Pradesh,Kurnool,TRUE
+Andhra Pradesh,Prakasam,TRUE
+Andhra Pradesh,Spsr Nellore,TRUE
+Andhra Pradesh,Srikakulam,TRUE
+Andhra Pradesh,Visakhapatanam,TRUE
+Andhra Pradesh,Vizianagaram,TRUE
+Andhra Pradesh,West Godavari,TRUE
+Andhra Pradesh,Y.S.R.,TRUE
+Arunachal Pradesh,Anjaw,TRUE
+Arunachal Pradesh,Changlang,TRUE
+Arunachal Pradesh,Dibang Valley,TRUE
+Arunachal Pradesh,East Kameng,TRUE
+Arunachal Pradesh,East Siang,TRUE
+Arunachal Pradesh,Kamle,TRUE
+Arunachal Pradesh,Kra Daadi,TRUE
+Arunachal Pradesh,Kurung Kumey,TRUE
+Arunachal Pradesh,Leparada,TRUE
+Arunachal Pradesh,Lohit,TRUE
+Arunachal Pradesh,Longding,TRUE
+Arunachal Pradesh,Lower Dibang Valley,TRUE
+Arunachal Pradesh,Lower Siang,TRUE
+Arunachal Pradesh,Lower Subansiri,TRUE
+Arunachal Pradesh,Namsai,TRUE
+Arunachal Pradesh,Pakke Kessang,TRUE
+Arunachal Pradesh,Papum Pare,TRUE
+Arunachal Pradesh,Shi Yomi,TRUE
+Arunachal Pradesh,Siang,TRUE
+Arunachal Pradesh,Tawang,TRUE
+Arunachal Pradesh,Tirap,TRUE
+Arunachal Pradesh,Upper Siang,TRUE
+Arunachal Pradesh,Upper Subansiri,TRUE
+Arunachal Pradesh,West Kameng,TRUE
+Arunachal Pradesh,West Siang,TRUE
+Assam,Bajali,TRUE
+Assam,Baksa,TRUE
+Assam,Barpeta,TRUE
+Assam,Biswanath,TRUE
+Assam,Bongaigaon,TRUE
+Assam,Cachar,TRUE
+Assam,Charaideo,TRUE
+Assam,Chirang,TRUE
+Assam,Darrang,TRUE
+Assam,Dhemaji,TRUE
+Assam,Dhubri,TRUE
+Assam,Dibrugarh,TRUE
+Assam,Dima Hasao,TRUE
+Assam,Goalpara,TRUE
+Assam,Golaghat,TRUE
+Assam,Hailakandi,TRUE
+Assam,Hojai,TRUE
+Assam,Jorhat,TRUE
+Assam,Kamrup,TRUE
+Assam,Kamrup Metro,TRUE
+Assam,Karbi Anglong,TRUE
+Assam,Karimganj,TRUE
+Assam,Kokrajhar,TRUE
+Assam,Lakhimpur,TRUE
+Assam,Majuli,TRUE
+Assam,Marigaon,TRUE
+Assam,Nagaon,TRUE
+Assam,Nalbari,TRUE
+Assam,Sivasagar,TRUE
+Assam,Sonitpur,TRUE
+Assam,South Salmara Mancachar,TRUE
+Assam,Tinsukia,TRUE
+Assam,Udalguri,TRUE
+Assam,West Karbi Anglong,TRUE
+Bihar,Araria,TRUE
+Bihar,Arwal,TRUE
+Bihar,Aurangabad,TRUE
+Bihar,Banka,TRUE
+Bihar,Begusarai,TRUE
+Bihar,Bhagalpur,TRUE
+Bihar,Bhojpur,TRUE
+Bihar,Buxar,TRUE
+Bihar,Darbhanga,TRUE
+Bihar,Gaya,TRUE
+Bihar,Gopalganj,TRUE
+Bihar,Jamui,TRUE
+Bihar,Jehanabad,TRUE
+Bihar,Kaimur (Bhabua),TRUE
+Bihar,Katihar,TRUE
+Bihar,Khagaria,TRUE
+Bihar,Kishanganj,TRUE
+Bihar,Lakhisarai,TRUE
+Bihar,Madhepura,TRUE
+Bihar,Madhubani,TRUE
+Bihar,Munger,TRUE
+Bihar,Muzaffarpur,TRUE
+Bihar,Nalanda,TRUE
+Bihar,Nawada,TRUE
+Bihar,Pashchim Champaran,TRUE
+Bihar,Patna,TRUE
+Bihar,Purbi Champaran,TRUE
+Bihar,Purnia,TRUE
+Bihar,Rohtas,TRUE
+Bihar,Saharsa,TRUE
+Bihar,Samastipur,TRUE
+Bihar,Saran,TRUE
+Bihar,Sheikhpura,TRUE
+Bihar,Sheohar,TRUE
+Bihar,Sitamarhi,TRUE
+Bihar,Siwan,TRUE
+Bihar,Supaul,TRUE
+Bihar,Vaishali,TRUE
+Chhattisgarh,Balod,TRUE
+Chhattisgarh,Baloda Bazar,TRUE
+Chhattisgarh,Balrampur,TRUE
+Chhattisgarh,Bastar,TRUE
+Chhattisgarh,Bemetara,TRUE
+Chhattisgarh,Bijapur,TRUE
+Chhattisgarh,Bilaspur,TRUE
+Chhattisgarh,Dantewada,TRUE
+Chhattisgarh,Dhamtari,TRUE
+Chhattisgarh,Durg,TRUE
+Chhattisgarh,Gariyaband,TRUE
+Chhattisgarh,Gaurella Pendra Marwahi,TRUE
+Chhattisgarh,Janjgir-Champa,TRUE
+Chhattisgarh,Jashpur,TRUE
+Chhattisgarh,Kabirdham,TRUE
+Chhattisgarh,Kanker,TRUE
+Chhattisgarh,Kondagaon,TRUE
+Chhattisgarh,Korba,TRUE
+Chhattisgarh,Korea,TRUE
+Chhattisgarh,Mahasamund,TRUE
+Chhattisgarh,Mungeli,TRUE
+Chhattisgarh,Narayanpur,TRUE
+Chhattisgarh,Raigarh,TRUE
+Chhattisgarh,Raipur,TRUE
+Chhattisgarh,Rajnandgaon,TRUE
+Chhattisgarh,Sukma,TRUE
+Chhattisgarh,Surajpur,TRUE
+Chhattisgarh,Surguja,TRUE
+Delhi,Central,TRUE
+Delhi,East,TRUE
+Delhi,New Delhi,TRUE
+Delhi,North,TRUE
+Delhi,North East,TRUE
+Delhi,North West,TRUE
+Delhi,Shahdara,TRUE
+Delhi,South,TRUE
+Delhi,South East,TRUE
+Delhi,South West,TRUE
+Delhi,West,TRUE
+Goa,North Goa,TRUE
+Goa,South Goa,TRUE
+Gujarat,Ahmadabad,TRUE
+Gujarat,Amreli,TRUE
+Gujarat,Anand,TRUE
+Gujarat,Arvalli,TRUE
+Gujarat,Banas Kantha,TRUE
+Gujarat,Bharuch,TRUE
+Gujarat,Bhavnagar,TRUE
+Gujarat,Botad,TRUE
+Gujarat,Chhotaudepur,TRUE
+Gujarat,Dang,TRUE
+Gujarat,Devbhumi Dwarka,TRUE
+Gujarat,Dohad,TRUE
+Gujarat,Gandhinagar,TRUE
+Gujarat,Gir Somnath,TRUE
+Gujarat,Jamnagar,TRUE
+Gujarat,Junagadh,TRUE
+Gujarat,Kachchh,TRUE
+Gujarat,Kheda,TRUE
+Gujarat,Mahesana,TRUE
+Gujarat,Mahisagar,TRUE
+Gujarat,Morbi,TRUE
+Gujarat,Narmada,TRUE
+Gujarat,Navsari,TRUE
+Gujarat,Panch Mahals,TRUE
+Gujarat,Patan,TRUE
+Gujarat,Porbandar,TRUE
+Gujarat,Rajkot,TRUE
+Gujarat,Sabar Kantha,TRUE
+Gujarat,Surat,TRUE
+Gujarat,Surendranagar,TRUE
+Gujarat,Tapi,TRUE
+Gujarat,Vadodara,TRUE
+Gujarat,Valsad,TRUE
+Haryana,Ambala,TRUE
+Haryana,Bhiwani,TRUE
+Haryana,Charki Dadri,TRUE
+Haryana,Faridabad,TRUE
+Haryana,Fatehabad,TRUE
+Haryana,Gurugram,TRUE
+Haryana,Hisar,TRUE
+Haryana,Jhajjar,TRUE
+Haryana,Jind,TRUE
+Haryana,Kaithal,TRUE
+Haryana,Karnal,TRUE
+Haryana,Kurukshetra,TRUE
+Haryana,Mahendragarh,TRUE
+Haryana,Nuh,TRUE
+Haryana,Palwal,TRUE
+Haryana,Panchkula,TRUE
+Haryana,Panipat,TRUE
+Haryana,Rewari,TRUE
+Haryana,Rohtak,TRUE
+Haryana,Sirsa,TRUE
+Haryana,Sonipat,TRUE
+Haryana,Yamunanagar,TRUE
+Himachal Pradesh,Bilaspur,TRUE
+Himachal Pradesh,Chamba,TRUE
+Himachal Pradesh,Hamirpur,TRUE
+Himachal Pradesh,Kangra,TRUE
+Himachal Pradesh,Kinnaur,TRUE
+Himachal Pradesh,Kullu,TRUE
+Himachal Pradesh,Lahul And Spiti,TRUE
+Himachal Pradesh,Mandi,TRUE
+Himachal Pradesh,Shimla,TRUE
+Himachal Pradesh,Sirmaur,TRUE
+Himachal Pradesh,Solan,TRUE
+Himachal Pradesh,Una,TRUE
+Jammu And Kashmir,Anantnag,TRUE
+Jammu And Kashmir,Bandipora,TRUE
+Jammu And Kashmir,Baramulla,TRUE
+Jammu And Kashmir,Budgam,TRUE
+Jammu And Kashmir,Doda,TRUE
+Jammu And Kashmir,Ganderbal,TRUE
+Jammu And Kashmir,Jammu,TRUE
+Jammu And Kashmir,Kathua,TRUE
+Jammu And Kashmir,Kishtwar,TRUE
+Jammu And Kashmir,Kulgam,TRUE
+Jammu And Kashmir,Kupwara,TRUE
+Jammu And Kashmir,Poonch,TRUE
+Jammu And Kashmir,Pulwama,TRUE
+Jammu And Kashmir,Rajouri,TRUE
+Jammu And Kashmir,Ramban,TRUE
+Jammu And Kashmir,Reasi,TRUE
+Jammu And Kashmir,Samba,TRUE
+Jammu And Kashmir,Shopian,TRUE
+Jammu And Kashmir,Srinagar,TRUE
+Jammu And Kashmir,Udhampur,TRUE
+Jharkhand,Bokaro,TRUE
+Jharkhand,Chatra,TRUE
+Jharkhand,Deoghar,TRUE
+Jharkhand,Dhanbad,TRUE
+Jharkhand,Dumka,TRUE
+Jharkhand,East Singhbum,TRUE
+Jharkhand,Garhwa,TRUE
+Jharkhand,Giridih,TRUE
+Jharkhand,Godda,TRUE
+Jharkhand,Gumla,TRUE
+Jharkhand,Hazaribagh,TRUE
+Jharkhand,Jamtara,TRUE
+Jharkhand,Khunti,TRUE
+Jharkhand,Koderma,TRUE
+Jharkhand,Latehar,TRUE
+Jharkhand,Lohardaga,TRUE
+Jharkhand,Pakur,TRUE
+Jharkhand,Palamu,TRUE
+Jharkhand,Ramgarh,TRUE
+Jharkhand,Ranchi,TRUE
+Jharkhand,Sahebganj,TRUE
+Jharkhand,Saraikela Kharsawan,TRUE
+Jharkhand,Simdega,TRUE
+Jharkhand,West Singhbhum,TRUE
+Karnataka,Bagalkote,TRUE
+Karnataka,Ballari,TRUE
+Karnataka,Belagavi,TRUE
+Karnataka,Bengaluru Rural,TRUE
+Karnataka,Bengaluru Urban,TRUE
+Karnataka,Bidar,TRUE
+Karnataka,Chamarajanagara,TRUE
+Karnataka,Chikkaballapura,TRUE
+Karnataka,Chikkamagaluru,TRUE
+Karnataka,Chitradurga,TRUE
+Karnataka,Dakshina Kannada,TRUE
+Karnataka,Davangere,TRUE
+Karnataka,Dharwad,TRUE
+Karnataka,Gadag,TRUE
+Karnataka,Hassan,TRUE
+Karnataka,Haveri,TRUE
+Karnataka,Kalaburagi,TRUE
+Karnataka,Kodagu,TRUE
+Karnataka,Kolar,TRUE
+Karnataka,Koppal,TRUE
+Karnataka,Mandya,TRUE
+Karnataka,Mysuru,TRUE
+Karnataka,Raichur,TRUE
+Karnataka,Ramanagara,TRUE
+Karnataka,Shivamogga,TRUE
+Karnataka,Tumakuru,TRUE
+Karnataka,Udupi,TRUE
+Karnataka,Uttara Kannada,TRUE
+Karnataka,Vijayapura,TRUE
+Karnataka,Yadgir,TRUE
+Kerala,Alappuzha,TRUE
+Kerala,Ernakulam,TRUE
+Kerala,Idukki,TRUE
+Kerala,Kannur,TRUE
+Kerala,Kasaragod,TRUE
+Kerala,Kollam,TRUE
+Kerala,Kottayam,TRUE
+Kerala,Kozhikode,TRUE
+Kerala,Malappuram,TRUE
+Kerala,Palakkad,TRUE
+Kerala,Pathanamthitta,TRUE
+Kerala,Thiruvananthapuram,TRUE
+Kerala,Thrissur,TRUE
+Kerala,Wayanad,TRUE
+Ladakh,Kargil,TRUE
+Ladakh,Leh Ladakh,TRUE
+Lakshadweep,Lakshadweep District,TRUE
+Madhya Pradesh,Agar Malwa,TRUE
+Madhya Pradesh,Alirajpur,TRUE
+Madhya Pradesh,Anuppur,TRUE
+Madhya Pradesh,Ashoknagar,TRUE
+Madhya Pradesh,Balaghat,TRUE
+Madhya Pradesh,Barwani,TRUE
+Madhya Pradesh,Betul,TRUE
+Madhya Pradesh,Bhind,TRUE
+Madhya Pradesh,Bhopal,TRUE
+Madhya Pradesh,Burhanpur,TRUE
+Madhya Pradesh,Chhatarpur,TRUE
+Madhya Pradesh,Chhindwara,TRUE
+Madhya Pradesh,Damoh,TRUE
+Madhya Pradesh,Datia,TRUE
+Madhya Pradesh,Dewas,TRUE
+Madhya Pradesh,Dhar,TRUE
+Madhya Pradesh,Dindori,TRUE
+Madhya Pradesh,East Nimar,TRUE
+Madhya Pradesh,Guna,TRUE
+Madhya Pradesh,Gwalior,TRUE
+Madhya Pradesh,Harda,TRUE
+Madhya Pradesh,Hoshangabad,TRUE
+Madhya Pradesh,Indore,TRUE
+Madhya Pradesh,Jabalpur,TRUE
+Madhya Pradesh,Jhabua,TRUE
+Madhya Pradesh,Katni,TRUE
+Madhya Pradesh,Khargone,TRUE
+Madhya Pradesh,Mandla,TRUE
+Madhya Pradesh,Mandsaur,TRUE
+Madhya Pradesh,Morena,TRUE
+Madhya Pradesh,Narsinghpur,TRUE
+Madhya Pradesh,Neemuch,TRUE
+Madhya Pradesh,Niwari,TRUE
+Madhya Pradesh,Panna,TRUE
+Madhya Pradesh,Raisen,TRUE
+Madhya Pradesh,Rajgarh,TRUE
+Madhya Pradesh,Ratlam,TRUE
+Madhya Pradesh,Rewa,TRUE
+Madhya Pradesh,Sagar,TRUE
+Madhya Pradesh,Satna,TRUE
+Madhya Pradesh,Sehore,TRUE
+Madhya Pradesh,Seoni,TRUE
+Madhya Pradesh,Shahdol,TRUE
+Madhya Pradesh,Shajapur,TRUE
+Madhya Pradesh,Sheopur,TRUE
+Madhya Pradesh,Shivpuri,TRUE
+Madhya Pradesh,Sidhi,TRUE
+Madhya Pradesh,Singrauli,TRUE
+Madhya Pradesh,Tikamgarh,TRUE
+Madhya Pradesh,Ujjain,TRUE
+Madhya Pradesh,Umaria,TRUE
+Madhya Pradesh,Vidisha,TRUE
+Maharashtra,Ahmednagar,TRUE
+Maharashtra,Akola,TRUE
+Maharashtra,Amravati,TRUE
+Maharashtra,Aurangabad,TRUE
+Maharashtra,Beed,TRUE
+Maharashtra,Bhandara,TRUE
+Maharashtra,Buldhana,TRUE
+Maharashtra,Chandrapur,TRUE
+Maharashtra,Dhule,TRUE
+Maharashtra,Gadchiroli,TRUE
+Maharashtra,Gondia,TRUE
+Maharashtra,Hingoli,TRUE
+Maharashtra,Jalgaon,TRUE
+Maharashtra,Jalna,TRUE
+Maharashtra,Kolhapur,TRUE
+Maharashtra,Latur,TRUE
+Maharashtra,Nagpur,TRUE
+Maharashtra,Nanded,TRUE
+Maharashtra,Nandurbar,TRUE
+Maharashtra,Nashik,TRUE
+Maharashtra,Osmanabad,TRUE
+Maharashtra,Palghar,TRUE
+Maharashtra,Parbhani,TRUE
+Maharashtra,Pune,TRUE
+Maharashtra,Raigad,TRUE
+Maharashtra,Ratnagiri,TRUE
+Maharashtra,Sangli,TRUE
+Maharashtra,Satara,TRUE
+Maharashtra,Sindhudurg,TRUE
+Maharashtra,Solapur,TRUE
+Maharashtra,Thane,TRUE
+Maharashtra,Wardha,TRUE
+Maharashtra,Washim,TRUE
+Maharashtra,Yavatmal,TRUE
+Manipur,Bishnupur,TRUE
+Manipur,Chandel,TRUE
+Manipur,Churachandpur,TRUE
+Manipur,Imphal East,TRUE
+Manipur,Imphal West,TRUE
+Manipur,Jiribam,TRUE
+Manipur,Kakching,TRUE
+Manipur,Kamjong,TRUE
+Manipur,Kangpokpi,TRUE
+Manipur,Noney,TRUE
+Manipur,Pherzawl,TRUE
+Manipur,Senapati,TRUE
+Manipur,Tamenglong,TRUE
+Manipur,Tengnoupal,TRUE
+Manipur,Thoubal,TRUE
+Manipur,Ukhrul,TRUE
+Meghalaya,Eastern West Khasi Hills,TRUE
+Meghalaya,East Garo Hills,TRUE
+Meghalaya,East Jaintia Hills,TRUE
+Meghalaya,East Khasi Hills,TRUE
+Meghalaya,North Garo Hills,TRUE
+Meghalaya,Ri Bhoi,TRUE
+Meghalaya,South Garo Hills,TRUE
+Meghalaya,South West Garo Hills,TRUE
+Meghalaya,South West Khasi Hills,TRUE
+Meghalaya,West Garo Hills,TRUE
+Meghalaya,West Jaintia Hills,TRUE
+Meghalaya,West Khasi Hills,TRUE
+Mizoram,Aizawl,TRUE
+Mizoram,Champhai,TRUE
+Mizoram,Hnahthial,TRUE
+Mizoram,Khawzawl,TRUE
+Mizoram,Kolasib,TRUE
+Mizoram,Lawngtlai,TRUE
+Mizoram,Lunglei,TRUE
+Mizoram,Mamit,TRUE
+Mizoram,Saiha,TRUE
+Mizoram,Saitual,TRUE
+Mizoram,Serchhip,TRUE
+Nagaland,Dimapur,TRUE
+Nagaland,Kiphire,TRUE
+Nagaland,Kohima,TRUE
+Nagaland,Longleng,TRUE
+Nagaland,Mokokchung,TRUE
+Nagaland,Mon,TRUE
+Nagaland,Noklak,TRUE
+Nagaland,Peren,TRUE
+Nagaland,Phek,TRUE
+Nagaland,Tuensang,TRUE
+Nagaland,Wokha,TRUE
+Nagaland,Zunheboto,TRUE
+Odisha,Anugul,TRUE
+Odisha,Balangir,TRUE
+Odisha,Baleshwar,TRUE
+Odisha,Bargarh,TRUE
+Odisha,Bhadrak,TRUE
+Odisha,Boudh,TRUE
+Odisha,Cuttack,TRUE
+Odisha,Deogarh,TRUE
+Odisha,Dhenkanal,TRUE
+Odisha,Gajapati,TRUE
+Odisha,Ganjam,TRUE
+Odisha,Jagatsinghapur,TRUE
+Odisha,Jajapur,TRUE
+Odisha,Jharsuguda,TRUE
+Odisha,Kalahandi,TRUE
+Odisha,Kandhamal,TRUE
+Odisha,Kendrapara,TRUE
+Odisha,Kendujhar,TRUE
+Odisha,Khordha,TRUE
+Odisha,Koraput,TRUE
+Odisha,Malkangiri,TRUE
+Odisha,Mayurbhanj,TRUE
+Odisha,Nabarangpur,TRUE
+Odisha,Nayagarh,TRUE
+Odisha,Nuapada,TRUE
+Odisha,Puri,TRUE
+Odisha,Rayagada,TRUE
+Odisha,Sambalpur,TRUE
+Odisha,Sonepur,TRUE
+Odisha,Sundargarh,TRUE
+Puducherry,Karaikal,TRUE
+Puducherry,Pondicherry,TRUE
+Punjab,Amritsar,TRUE
+Punjab,Barnala,TRUE
+Punjab,Bathinda,TRUE
+Punjab,Faridkot,TRUE
+Punjab,Fatehgarh Sahib,TRUE
+Punjab,Fazilka,TRUE
+Punjab,Ferozepur,TRUE
+Punjab,Gurdaspur,TRUE
+Punjab,Hoshiarpur,TRUE
+Punjab,Jalandhar,TRUE
+Punjab,Kapurthala,TRUE
+Punjab,Ludhiana,TRUE
+Punjab,Malerkotla,TRUE
+Punjab,Mansa,TRUE
+Punjab,Moga,TRUE
+Punjab,Pathankot,TRUE
+Punjab,Patiala,TRUE
+Punjab,Rupnagar,TRUE
+Punjab,Sangrur,TRUE
+Punjab,S.A.S Nagar,TRUE
+Punjab,Shahid Bhagat Singh Nagar,TRUE
+Punjab,Sri Muktsar Sahib,TRUE
+Punjab,Tarn Taran,TRUE
+Rajasthan,Ajmer,TRUE
+Rajasthan,Alwar,TRUE
+Rajasthan,Banswara,TRUE
+Rajasthan,Baran,TRUE
+Rajasthan,Barmer,TRUE
+Rajasthan,Bharatpur,TRUE
+Rajasthan,Bhilwara,TRUE
+Rajasthan,Bikaner,TRUE
+Rajasthan,Bundi,TRUE
+Rajasthan,Chittorgarh,TRUE
+Rajasthan,Churu,TRUE
+Rajasthan,Dausa,TRUE
+Rajasthan,Dholpur,TRUE
+Rajasthan,Dungarpur,TRUE
+Rajasthan,Ganganagar,TRUE
+Rajasthan,Hanumangarh,TRUE
+Rajasthan,Jaipur,TRUE
+Rajasthan,Jaisalmer,TRUE
+Rajasthan,Jalore,TRUE
+Rajasthan,Jhalawar,TRUE
+Rajasthan,Jhunjhunu,TRUE
+Rajasthan,Jodhpur,TRUE
+Rajasthan,Karauli,TRUE
+Rajasthan,Kota,TRUE
+Rajasthan,Nagaur,TRUE
+Rajasthan,Pali,TRUE
+Rajasthan,Pratapgarh,TRUE
+Rajasthan,Rajsamand,TRUE
+Rajasthan,Sawai Madhopur,TRUE
+Rajasthan,Sikar,TRUE
+Rajasthan,Sirohi,TRUE
+Rajasthan,Tonk,TRUE
+Rajasthan,Udaipur,TRUE
+Sikkim,Gangtok,TRUE
+Sikkim,Gyalshing,TRUE
+Sikkim,Mangan,TRUE
+Sikkim,Namchi,TRUE
+Sikkim,Pakyong,TRUE
+Tamil Nadu,Ariyalur,TRUE
+Tamil Nadu,Chengalpattu,TRUE
+Tamil Nadu,Chennai,TRUE
+Tamil Nadu,Coimbatore,TRUE
+Tamil Nadu,Cuddalore,TRUE
+Tamil Nadu,Dharmapuri,TRUE
+Tamil Nadu,Dindigul,TRUE
+Tamil Nadu,Erode,TRUE
+Tamil Nadu,Kallakurichi,TRUE
+Tamil Nadu,Kanchipuram,TRUE
+Tamil Nadu,Kanniyakumari,TRUE
+Tamil Nadu,Karur,TRUE
+Tamil Nadu,Krishnagiri,TRUE
+Tamil Nadu,Madurai,TRUE
+Tamil Nadu,Mayiladuthurai,TRUE
+Tamil Nadu,Nagapattinam,TRUE
+Tamil Nadu,Namakkal,TRUE
+Tamil Nadu,Perambalur,TRUE
+Tamil Nadu,Pudukkottai,TRUE
+Tamil Nadu,Ramanathapuram,TRUE
+Tamil Nadu,Ranipet,TRUE
+Tamil Nadu,Salem,TRUE
+Tamil Nadu,Sivaganga,TRUE
+Tamil Nadu,Tenkasi,TRUE
+Tamil Nadu,Thanjavur,TRUE
+Tamil Nadu,Theni,TRUE
+Tamil Nadu,The Nilgiris,TRUE
+Tamil Nadu,Thiruvallur,TRUE
+Tamil Nadu,Thiruvarur,TRUE
+Tamil Nadu,Tiruchirappalli,TRUE
+Tamil Nadu,Tirunelveli,TRUE
+Tamil Nadu,Tirupathur,TRUE
+Tamil Nadu,Tiruppur,TRUE
+Tamil Nadu,Tiruvannamalai,TRUE
+Tamil Nadu,Tuticorin,TRUE
+Tamil Nadu,Vellore,TRUE
+Tamil Nadu,Villupuram,TRUE
+Tamil Nadu,Virudhunagar,TRUE
+Telangana,Adilabad,TRUE
+Telangana,Bhadradri Kothagudem,TRUE
+Telangana,Hanumakonda,TRUE
+Telangana,Hyderabad,TRUE
+Telangana,Jagitial,TRUE
+Telangana,Jangoan,TRUE
+Telangana,Jayashankar Bhupalapally,TRUE
+Telangana,Jogulamba Gadwal,TRUE
+Telangana,Kamareddy,TRUE
+Telangana,Karimnagar,TRUE
+Telangana,Khammam,TRUE
+Telangana,Kumuram Bheem Asifabad,TRUE
+Telangana,Mahabubabad,TRUE
+Telangana,Mahabubnagar,TRUE
+Telangana,Mancherial,TRUE
+Telangana,Medak,TRUE
+Telangana,Medchal Malkajgiri,TRUE
+Telangana,Mulugu,TRUE
+Telangana,Nagarkurnool,TRUE
+Telangana,Nalgonda,TRUE
+Telangana,Narayanpet,TRUE
+Telangana,Nirmal,TRUE
+Telangana,Nizamabad,TRUE
+Telangana,Peddapalli,TRUE
+Telangana,Rajanna Sircilla,TRUE
+Telangana,Ranga Reddy,TRUE
+Telangana,Sangareddy,TRUE
+Telangana,Siddipet,TRUE
+Telangana,Suryapet,TRUE
+Telangana,Vikarabad,TRUE
+Telangana,Wanaparthy,TRUE
+Telangana,Warangal,TRUE
+Telangana,Yadadri Bhuvanagiri,TRUE
+The Dadra And Nagar Haveli And Daman And Diu,Dadra And Nagar Haveli,TRUE
+The Dadra And Nagar Haveli And Daman And Diu,Daman,TRUE
+The Dadra And Nagar Haveli And Daman And Diu,Diu,TRUE
+Tripura,Dhalai,TRUE
+Tripura,Gomati,TRUE
+Tripura,Khowai,TRUE
+Tripura,North Tripura,TRUE
+Tripura,Sepahijala,TRUE
+Tripura,South Tripura,TRUE
+Tripura,Unakoti,TRUE
+Tripura,West Tripura,TRUE
+Uttarakhand,Almora,TRUE
+Uttarakhand,Bageshwar,TRUE
+Uttarakhand,Chamoli,TRUE
+Uttarakhand,Champawat,TRUE
+Uttarakhand,Dehradun,TRUE
+Uttarakhand,Haridwar,TRUE
+Uttarakhand,Nainital,TRUE
+Uttarakhand,Pauri Garhwal,TRUE
+Uttarakhand,Pithoragarh,TRUE
+Uttarakhand,Rudra Prayag,TRUE
+Uttarakhand,Tehri Garhwal,TRUE
+Uttarakhand,Udam Singh Nagar,TRUE
+Uttarakhand,Uttar Kashi,TRUE
+Uttar Pradesh,Agra,TRUE
+Uttar Pradesh,Aligarh,TRUE
+Uttar Pradesh,Ambedkar Nagar,TRUE
+Uttar Pradesh,Amethi,TRUE
+Uttar Pradesh,Amroha,TRUE
+Uttar Pradesh,Auraiya,TRUE
+Uttar Pradesh,Ayodhya,TRUE
+Uttar Pradesh,Azamgarh,TRUE
+Uttar Pradesh,Baghpat,TRUE
+Uttar Pradesh,Bahraich,TRUE
+Uttar Pradesh,Ballia,TRUE
+Uttar Pradesh,Balrampur,TRUE
+Uttar Pradesh,Banda,TRUE
+Uttar Pradesh,Barabanki,TRUE
+Uttar Pradesh,Bareilly,TRUE
+Uttar Pradesh,Basti,TRUE
+Uttar Pradesh,Bhadohi,TRUE
+Uttar Pradesh,Bijnor,TRUE
+Uttar Pradesh,Budaun,TRUE
+Uttar Pradesh,Bulandshahr,TRUE
+Uttar Pradesh,Chandauli,TRUE
+Uttar Pradesh,Chitrakoot,TRUE
+Uttar Pradesh,Deoria,TRUE
+Uttar Pradesh,Etah,TRUE
+Uttar Pradesh,Etawah,TRUE
+Uttar Pradesh,Farrukhabad,TRUE
+Uttar Pradesh,Fatehpur,TRUE
+Uttar Pradesh,Firozabad,TRUE
+Uttar Pradesh,Gautam Buddha Nagar,TRUE
+Uttar Pradesh,Ghaziabad,TRUE
+Uttar Pradesh,Ghazipur,TRUE
+Uttar Pradesh,Gonda,TRUE
+Uttar Pradesh,Gorakhpur,TRUE
+Uttar Pradesh,Hamirpur,TRUE
+Uttar Pradesh,Hapur,TRUE
+Uttar Pradesh,Hardoi,TRUE
+Uttar Pradesh,Hathras,TRUE
+Uttar Pradesh,Jalaun,TRUE
+Uttar Pradesh,Jaunpur,TRUE
+Uttar Pradesh,Jhansi,TRUE
+Uttar Pradesh,Kannauj,TRUE
+Uttar Pradesh,Kanpur Dehat,TRUE
+Uttar Pradesh,Kanpur Nagar,TRUE
+Uttar Pradesh,Kasganj,TRUE
+Uttar Pradesh,Kaushambi,TRUE
+Uttar Pradesh,Kheri,TRUE
+Uttar Pradesh,Kushi Nagar,TRUE
+Uttar Pradesh,Lalitpur,TRUE
+Uttar Pradesh,Lucknow,TRUE
+Uttar Pradesh,Maharajganj,TRUE
+Uttar Pradesh,Mahoba,TRUE
+Uttar Pradesh,Mainpuri,TRUE
+Uttar Pradesh,Mathura,TRUE
+Uttar Pradesh,Mau,TRUE
+Uttar Pradesh,Meerut,TRUE
+Uttar Pradesh,Mirzapur,TRUE
+Uttar Pradesh,Moradabad,TRUE
+Uttar Pradesh,Muzaffarnagar,TRUE
+Uttar Pradesh,Pilibhit,TRUE
+Uttar Pradesh,Pratapgarh,TRUE
+Uttar Pradesh,Prayagraj,TRUE
+Uttar Pradesh,Rae Bareli,TRUE
+Uttar Pradesh,Rampur,TRUE
+Uttar Pradesh,Saharanpur,TRUE
+Uttar Pradesh,Sambhal,TRUE
+Uttar Pradesh,Sant Kabeer Nagar,TRUE
+Uttar Pradesh,Shahjahanpur,TRUE
+Uttar Pradesh,Shamli,TRUE
+Uttar Pradesh,Shravasti,TRUE
+Uttar Pradesh,Siddharth Nagar,TRUE
+Uttar Pradesh,Sitapur,TRUE
+Uttar Pradesh,Sonbhadra,TRUE
+Uttar Pradesh,Sultanpur,TRUE
+Uttar Pradesh,Unnao,TRUE
+Uttar Pradesh,Varanasi,TRUE
+West Bengal,24 Paraganas North,TRUE
+West Bengal,24 Paraganas South,TRUE
+West Bengal,Alipurduar,TRUE
+West Bengal,Bankura,TRUE
+West Bengal,Birbhum,TRUE
+West Bengal,Coochbehar,TRUE
+West Bengal,Darjeeling,TRUE
+West Bengal,Dinajpur Dakshin,TRUE
+West Bengal,Dinajpur Uttar,TRUE
+West Bengal,Hooghly,TRUE
+West Bengal,Howrah,TRUE
+West Bengal,Jalpaiguri,TRUE
+West Bengal,Jhargram,TRUE
+West Bengal,Kalimpong,TRUE
+West Bengal,Maldah,TRUE
+West Bengal,Medinipur East,TRUE
+West Bengal,Medinipur West,TRUE
+West Bengal,Murshidabad,TRUE
+West Bengal,Nadia,TRUE
+West Bengal,Paschim Bardhaman,TRUE
+West Bengal,Purba Bardhaman,TRUE
+West Bengal,Purulia,TRUE
