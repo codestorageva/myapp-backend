@@ -15,7 +15,7 @@
 	<description>A Spring Boot application to generate professional GST invoices with product details, tax calculations, client info.</description>
 
     <properties>
-        <java.version>21</java.version>
+        <java.version>17</java.version>
         <spring-cloud.version>2024.0.0</spring-cloud.version>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
