@@ -1,1 +1,1 @@
-web: JAVA_TOOL_OPTIONS="-Djava.version=17" mvn spring-boot:run -Dspring-boot.run.arguments=--server.port=5000
+web: mvn clean package -DskipTests && java -jar target/GST_Invoice_Builder-0.0.1-SNAPSHOT.jar --server.port=5000
