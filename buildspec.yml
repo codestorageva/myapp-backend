@@ -7,7 +7,7 @@ phases:
       # JAR ફાઈલને મેઈન લેવલ પર લાવવા માટે
       - cp target/*.jar ../app.jar
       # Procfile ને પણ મેઈન લેવલ પર લાવવા માટે
-      - cp Procfile ../Procfile
+     - cp ../Procfile ./Procfile
 artifacts:
   files:
     - app.jar
