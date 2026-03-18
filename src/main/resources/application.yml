@@ -54,19 +54,29 @@ spring:
 
 host_url: ${VERIFY_EMAIL_HOST}
 
-# AWS Configuration (use environment variables)
-# aws:
-#   endpointUrl: https://s3.ap-south-1.amazonaws.com
-#   accessKey: ${AWS_ACCESS_KEY}
-#   secretKey: ${AWS_SECRET_KEY}
-#   bucketName: ${AWS_BUCKET_NAME}
-
 database-config:
-  host: ${host}
-  port: ${port}
-  database: ${database:invoice}
-  username: ${spring.datasource.username:postgres}
-  password: ${spring.datasource.password:janki362005}
+  host: ${SPRING_DATASOURCE_URL}    # full JDBC URL from EB env
+  port: 5432
+  database: invoice
+  username: ${SPRING_DATASOURCE_USERNAME}
+  password: ${SPRING_DATASOURCE_PASSWORD}
+
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    hikari:
+      data-source-properties:
+        sslmode: ${SPRING_DATASOURCE_SSLMODE:verify-full}
+        sslrootcert: ${SPRING_DATASOURCE_SSLROOTCERT:/var/app/current/global-bundle.pem}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
 
 backup:
   pgDumpPath: ${pgDumpPath}
