@@ -2,10 +2,9 @@ version: 0.2
 phases:
   build:
     commands:
-      - cd myapp-backend  # Aa line add karo jethi Maven ne pom.xml male
       - mvn clean package -DskipTests
 artifacts:
   files:
-    - myapp-backend/target/*.jar
-    - myapp-backend/Procfile
+    - 'target/*.jar'
+    - 'Procfile'
   discard-paths: yes
