@@ -22,7 +22,7 @@ jobs:
         run: |
           mkdir -p deploy
           cp myapp-backend/target/app.jar deploy/app.jar
-          cp myapp-backend/Procfile deploy/Procfile
+          cp Procfile deploy/Procfile
 
       - name: Zip for EB
         run: |
