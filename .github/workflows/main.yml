@@ -19,12 +19,12 @@ jobs:
           distribution: 'temurin'
 
       - name: Build with Maven
-        run: mvn clean package -f myapp-backend/pom.xml -DskipTests
+        run: mvn clean package -DskipTests
 
       - name: Prepare deploy folder
         run: |
           mkdir -p deploy
-          cp myapp-backend/target/app.jar deploy/app.jar
+          cp target/app.jar deploy/app.jar
           cp Procfile deploy/Procfile
 
       - name: Zip for EB
