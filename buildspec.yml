@@ -21,7 +21,7 @@ jobs:
         run: mvn clean package -f myapp-backend/pom.xml
 
       - name: Copy JAR to root
-        run: copy myapp-backend\target\GST_Invoice_Builder-0.0.1-SNAPSHOT.jar app.jar
+        run: copy myapp-backend\target\app.jar app.jar
 
       - name: Zip for EB
-        run: powershell Compress-Archive -Path * -DestinationPath GST_Invoice_Builder_EB.zip
+        run: powershell Compress-Archive -Path app.jar, myapp-backend/Procfile -DestinationPath deploy.zip
