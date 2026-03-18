@@ -1,20 +1,27 @@
-version: 0.2
+name: Build and EB Deploy
 
-phases:
-  install:
-    runtime-versions:
-      java: corretto17
-    commands:
-      - echo "Installing dependencies..."
+on:
+  push:
+    branches: [ main ]
+
+jobs:
   build:
-    commands:
-      - echo "Building Maven project..."
-      - mvn clean package -f myapp-backend/pom.xml
-  post_build:
-    commands:
-      - echo "Copying jar file to root as app.jar"
-      - cp myapp-backend/target/GST_Invoice_Builder-0.0.1-SNAPSHOT.jar app.jar
-artifacts:
-  files:
-    - app.jar
-    - Procfile
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Build with Maven
+        run: mvn clean package -f myapp-backend/pom.xml
+
+      - name: Copy JAR to root
+        run: copy myapp-backend\target\GST_Invoice_Builder-0.0.1-SNAPSHOT.jar app.jar
+
+      - name: Zip for EB
+        run: powershell Compress-Archive -Path * -DestinationPath GST_Invoice_Builder_EB.zip
