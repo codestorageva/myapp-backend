@@ -1,13 +1,13 @@
 version: 0.2
-
 phases:
   build:
     commands:
       - cd myapp-backend
       - mvn clean package -DskipTests
-      - cp target/app.jar ../app.jar
+      # JAR ફાઈલને મેઈન લેવલ પર લાવવા માટે
+      - cp target/*.jar ../app.jar
+      # Procfile ને પણ મેઈન લેવલ પર લાવવા માટે
       - cp Procfile ../Procfile
-
 artifacts:
   files:
     - app.jar
