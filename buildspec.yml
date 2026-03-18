@@ -1,13 +1,19 @@
 version: 0.2
+
 phases:
+  install:
+    runtime-versions:
+      java: corretto17
+    commands:
+      - echo "Installing dependencies..."
   build:
     commands:
-      - cd myapp-backend
-      - mvn clean package -DskipTests
-      # JAR ફાઈલને મેઈન લેવલ પર લાવવા માટે
-      - cp target/*.jar ../app.jar
-      # Procfile ને પણ મેઈન લેવલ પર લાવવા માટે
-     - cp ../Procfile ./Procfile
+      - echo "Building Maven project..."
+      - mvn clean package -f myapp-backend/pom.xml
+  post_build:
+    commands:
+      - echo "Copying jar file to root as app.jar"
+      - cp myapp-backend/target/GST_Invoice_Builder-0.0.1-SNAPSHOT.jar app.jar
 artifacts:
   files:
     - app.jar
