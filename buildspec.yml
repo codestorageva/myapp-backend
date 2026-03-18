@@ -5,9 +5,10 @@ phases:
     commands:
       - cd myapp-backend
       - mvn clean package -DskipTests
+      - cp target/app.jar ../app.jar
+      - cp Procfile ../Procfile
 
 artifacts:
   files:
-    - myapp-backend/target/app.jar
-    - myapp-backend/Procfile
-  discard-paths: yes
+    - app.jar
+    - Procfile
