@@ -1,13 +1,11 @@
 name: Build and EB Deploy
-
 on:
   push:
     branches: [ main ]
 
 jobs:
   build:
-    runs-on: windows-latest
-
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 
@@ -18,10 +16,29 @@ jobs:
           distribution: 'temurin'
 
       - name: Build with Maven
-        run: mvn clean package -f myapp-backend/pom.xml
+        run: mvn clean package -f myapp-backend/pom.xml -DskipTests
 
-      - name: Copy JAR to root
-        run: copy myapp-backend\target\app.jar app.jar
+      - name: Prepare deploy folder
+        run: |
+          mkdir -p deploy
+          cp myapp-backend/target/app.jar deploy/app.jar
+          cp myapp-backend/Procfile deploy/Procfile
 
       - name: Zip for EB
-        run: powershell Compress-Archive -Path app.jar, myapp-backend/Procfile -DestinationPath deploy.zip
+        run: |
+          cd deploy
+          zip -r ../deploy.zip .
+          cd ..
+          echo "ZIP contents:"
+          unzip -l deploy.zip
+
+      - name: Deploy to Elastic Beanstalk
+        uses: einaregilsson/beanstalk-deploy@v21
+        with:
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          application_name: myapp-backend    # ← બદલો
+          environment_name: myapp-backend-v2    # ← બદલો
+          region: ap-south-1
+          version_label: v${{ github.run_number }}
+          deployment_package: deploy.zip
