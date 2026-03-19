@@ -4,43 +4,42 @@ server:
 spring:
   application:
     name: GST_INVOICE
-
   profiles:
     active: ${PROFILE:dev}
-
   security:
     oauth2:
       client:
         registration:
           google:
-            client-id: ${GOOGLE_CLIENT_ID}
-            client-secret: ${GOOGLE_CLIENT_SECRET}
+            client-id: ${GOOGLE_CLIENT_ID:default}
+            client-secret: ${GOOGLE_CLIENT_SECRET:default}
           github:
-            client-id: ${GITHUB_CLIENT_ID}
-            client-secret: ${GITHUB_CLIENT_SECRET}
+            client-id: ${GITHUB_CLIENT_ID:default}
+            client-secret: ${GITHUB_CLIENT_SECRET:default}
           facebook:
-            client-id: ${FACEBOOK_CLIENT_ID}
-            client-secret: ${FACEBOOK_CLIENT_SECRET}
-
+            client-id: ${FACEBOOK_CLIENT_ID:default}
+            client-secret: ${FACEBOOK_CLIENT_SECRET:default}
   servlet:
     multipart:
       max-file-size: 50MB
       max-request-size: 50MB
-
   jpa:
     show-sql: true
-
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
   batch:
     jdbc:
       initialize-schema: always
     job:
       enabled: false
-
   mail:
-    host: ${EMAIL_HOST}
-    port: ${EMAIL_PORT}
-    username: ${EMAIL_ID}
-    password: ${EMAIL_PASSWORD}
+    host: ${EMAIL_HOST:smtp.gmail.com}
+    port: ${EMAIL_PORT:587}
+    username: ${EMAIL_ID:default}
+    password: ${EMAIL_PASSWORD:default}
     properties:
       mail:
         debug: true
@@ -51,33 +50,20 @@ spring:
           starttls:
             enable: true
             required: true
+  datasource:
+    url: jdbc:postgresql://${host}:${port}/${database}
+    username: ${spring.datasource.username}
+    password: ${spring.datasource.password}
 
-host_url: ${VERIFY_EMAIL_HOST}
+host_url: ${VERIFY_EMAIL_HOST:http://localhost:5000}
 
 database-config:
-  host: ${SPRING_DATASOURCE_URL}    # full JDBC URL from EB env
-  port: 5432
-  database: invoice
-  username: ${SPRING_DATASOURCE_USERNAME}
-  password: ${SPRING_DATASOURCE_PASSWORD}
-
-spring:
-  datasource:
-    url: ${SPRING_DATASOURCE_URL}
-    username: ${SPRING_DATASOURCE_USERNAME}
-    password: ${SPRING_DATASOURCE_PASSWORD}
-    hikari:
-      data-source-properties:
-        sslmode: ${SPRING_DATASOURCE_SSLMODE:verify-full}
-        sslrootcert: ${SPRING_DATASOURCE_SSLROOTCERT:/var/app/current/global-bundle.pem}
-
-  jpa:
-    hibernate:
-      ddl-auto: update
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
+  host: ${host}
+  port: ${port}
+  database: ${database:invoice}
+  username: ${spring.datasource.username:postgres}
+  password: ${spring.datasource.password}
 
 backup:
-  pgDumpPath: ${pgDumpPath}
-  backupFilePath: ${backupFilePath}
+  pgDumpPath: ${pgDumpPath:/usr/bin/pg_dump}
+  backupFilePath: ${backupFilePath:/tmp/backup}
