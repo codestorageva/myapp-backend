@@ -45,3 +45,4 @@ jobs:
           version_label: v${{ github.run_number }}
           deployment_package: deploy.zip
           use_existing_version_if_available: true
+          wait_for_environment_to_be_green_before_deploy: true
