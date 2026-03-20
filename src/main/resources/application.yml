@@ -1,13 +1,13 @@
 server:
-  port: ${SERVER_PORT:5000}  # EB default port mapping
+  port: ${SERVER_PORT:5000}
 
 spring:
   application:
     name: GST_INVOICE
   profiles:
-    active: ${SPRING_PROFILES_ACTIVE:prod}  # EB environment variable thi profile select
+    active: ${SPRING_PROFILES_ACTIVE:prod}
   datasource:
-    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/gst_invoice}
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/invoice}
     username: ${SPRING_DATASOURCE_USERNAME:postgres}
     password: ${SPRING_DATASOURCE_PASSWORD:root}
   jpa:
@@ -21,6 +21,11 @@ spring:
     multipart:
       max-file-size: 50MB
       max-request-size: 50MB
+  batch:
+    jdbc:
+      initialize-schema: always
+    job:
+      enabled: false
   mail:
     host: ${EMAIL_HOST:smtp.gmail.com}
     port: ${EMAIL_PORT:587}
@@ -36,23 +41,22 @@ spring:
           starttls:
             enable: true
             required: true
-  oauth2:
-    client:
-      registration:
-        google:
-          client-id: ${GOOGLE_CLIENT_ID:default}
-          client-secret: ${GOOGLE_CLIENT_SECRET:default}
-        github:
-          client-id: ${GITHUB_CLIENT_ID:default}
-          client-secret: ${GITHUB_CLIENT_SECRET:default}
-        facebook:
-          client-id: ${FACEBOOK_CLIENT_ID:default}
-          client-secret: ${FACEBOOK_CLIENT_SECRET:default}
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: ${GOOGLE_CLIENT_ID:default}
+            client-secret: ${GOOGLE_CLIENT_SECRET:default}
+          github:
+            client-id: ${GITHUB_CLIENT_ID:default}
+            client-secret: ${GITHUB_CLIENT_SECRET:default}
+          facebook:
+            client-id: ${FACEBOOK_CLIENT_ID:default}
+            client-secret: ${FACEBOOK_CLIENT_SECRET:default}
 
-# Backup / DB dump
+host_url: ${VERIFY_EMAIL_HOST:http://localhost:5000}
+
 backup:
   pgDumpPath: ${PG_DUMP_PATH:/usr/bin/pg_dump}
   backupFilePath: ${BACKUP_FILE_PATH:/tmp/backup}
-
-# Host URL for email verification
-host_url: ${VERIFY_EMAIL_HOST:http://localhost:${SERVER_PORT}}
