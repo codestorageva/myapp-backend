@@ -1,28 +1,15 @@
 server:
-  port: ${SERVER_PORT:5000}
+  port: ${SERVER_PORT:5000}  # EB default port mapping
 
 spring:
   application:
     name: GST_INVOICE
   profiles:
-    active: ${PROFILE:dev}
-  security:
-    oauth2:
-      client:
-        registration:
-          google:
-            client-id: ${GOOGLE_CLIENT_ID:default}
-            client-secret: ${GOOGLE_CLIENT_SECRET:default}
-          github:
-            client-id: ${GITHUB_CLIENT_ID:default}
-            client-secret: ${GITHUB_CLIENT_SECRET:default}
-          facebook:
-            client-id: ${FACEBOOK_CLIENT_ID:default}
-            client-secret: ${FACEBOOK_CLIENT_SECRET:default}
-  servlet:
-    multipart:
-      max-file-size: 50MB
-      max-request-size: 50MB
+    active: ${SPRING_PROFILES_ACTIVE:prod}  # EB environment variable thi profile select
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/gst_invoice}
+    username: ${SPRING_DATASOURCE_USERNAME:postgres}
+    password: ${SPRING_DATASOURCE_PASSWORD:root}
   jpa:
     show-sql: true
     hibernate:
@@ -30,11 +17,10 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
-  batch:
-    jdbc:
-      initialize-schema: always
-    job:
-      enabled: false
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
   mail:
     host: ${EMAIL_HOST:smtp.gmail.com}
     port: ${EMAIL_PORT:587}
@@ -50,20 +36,23 @@ spring:
           starttls:
             enable: true
             required: true
-  datasource:
-    url: jdbc:postgresql://${host}:${port}/${database}
-    username: ${spring.datasource.username}
-    password: ${spring.datasource.password}
+  oauth2:
+    client:
+      registration:
+        google:
+          client-id: ${GOOGLE_CLIENT_ID:default}
+          client-secret: ${GOOGLE_CLIENT_SECRET:default}
+        github:
+          client-id: ${GITHUB_CLIENT_ID:default}
+          client-secret: ${GITHUB_CLIENT_SECRET:default}
+        facebook:
+          client-id: ${FACEBOOK_CLIENT_ID:default}
+          client-secret: ${FACEBOOK_CLIENT_SECRET:default}
 
-host_url: ${VERIFY_EMAIL_HOST:http://localhost:5000}
-
-database-config:
-  host: ${host}
-  port: ${port}
-  database: ${database:invoice}
-  username: ${spring.datasource.username:postgres}
-  password: ${spring.datasource.password}
-
+# Backup / DB dump
 backup:
-  pgDumpPath: ${pgDumpPath:/usr/bin/pg_dump}
-  backupFilePath: ${backupFilePath:/tmp/backup}
+  pgDumpPath: ${PG_DUMP_PATH:/usr/bin/pg_dump}
+  backupFilePath: ${BACKUP_FILE_PATH:/tmp/backup}
+
+# Host URL for email verification
+host_url: ${VERIFY_EMAIL_HOST:http://localhost:${SERVER_PORT}}
