@@ -36,7 +36,7 @@ jobs:
           application_name: myapp-backend
           environment_name: myapp-backend-env
           region: ap-south-1
-          version_label: v${{ github.run_number }}
+          version_label: v${{ github.run_number }}-${{ github.sha }}
           deployment_package: deploy.zip
           use_existing_version_if_available: true
           wait_for_deployment: false
